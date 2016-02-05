@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Definations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Description</th>
+      <th>Know more</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @definations.each do |defination| %>
+      <tr>
+        <td><%= defination.keyword %></td>
+        <td><%= defination.description %></td>
+        <td><%= defination.know_more %></td>
+        <td><%= link_to 'Show', defination %></td>
+        <td><%= link_to 'Edit', edit_defination_path(defination) %></td>
+        <td><%= link_to 'Destroy', defination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Defination', new_defination_path %>

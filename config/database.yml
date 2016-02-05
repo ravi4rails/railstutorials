@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: railstutorials
+  username: postgres
+  password: postgres
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: railstutorials
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: railstutorials
+  username: postgres
+  password: postgres

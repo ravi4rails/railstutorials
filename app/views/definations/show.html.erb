@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @defination.keyword %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @defination.description %>
+</p>
+
+<p>
+  <strong>Know more:</strong>
+  <%= @defination.know_more %>
+</p>
+
+<%= link_to 'Edit', edit_defination_path(@defination) %> |
+<%= link_to 'Back', definations_path %>
